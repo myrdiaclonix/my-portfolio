@@ -1,3 +1,9 @@
-h1 {
-    text-align: center;
+.active.nav-link {
+    border-color: darkred !important;
+}
+.my-color {
+    color: darkred;
+}
+.my-social-icon {
+    text-decoration: none;
 }

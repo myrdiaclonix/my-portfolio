@@ -1,13 +1,88 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>my-portfolio</title>
+<html lang="pt-br" class="h-100">
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>my-portfolio</h1>
-    <hr />
-    <p>Olá, me chamo Jorge Luis e este é meu portfólio.</p>
-  </body>
+<head>
+  <title>my-portfolio</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="d-flex flex-column h-100">
+  <header>
+    <nav class="navbar navbar-expand-lg border-bottom">
+      <div class="container-lg">
+        <span class="navbar-brand mb-0 h1">Jorge L. F. Costa</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+          <div class="navbar-nav nav nav-underline">
+            <a class="nav-link active" id="nav-home-tab" aria-current="page" data-bs-toggle="tab"
+              data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+            <a class="nav-link" id="nav-features-tab" data-bs-toggle="tab" data-bs-target="#nav-features" type="button"
+              role="tab" aria-controls="nav-features" aria-selected="false">Features</a>
+            <a class="nav-link" id="nav-pricing-tab" data-bs-toggle="tab" data-bs-target="#nav-pricing" type="button"
+              role="tab" aria-controls="nav-pricing" aria-selected="false">Pricing</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        Bom dia
+      </div>
+      <div class="tab-pane fade" id="nav-features" role="tabpanel" aria-labelledby="features-tab" tabindex="0">
+        Boa tarde
+      </div>
+      <div class="tab-pane fade" id="nav-pricing" role="tabpanel" aria-labelledby="pricing-tab" tabindex="0">
+        Boa noite
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-top mt-auto pt-3">
+    <div class="container-lg">
+      <div class="text-center">
+        <a class="my-color my-social-icon me-3" href="https://www.linkedin.com/in/jlfcosta/" target="_blank">
+          <ion-icon name="logo-linkedin" size="small" aria-label="LinkedIn"></ion-icon>
+        </a>
+        <a class="my-color my-social-icon me-3" href="https://instagram.com/myrdiaclonix?igshid=MzNlNGNkZWQ4Mg=="
+          target="_blank">
+          <ion-icon name="logo-instagram" size="small" aria-label="Instagram"></ion-icon>
+        </a>
+        <a class="my-color my-social-icon me-3" href="https://www.youtube.com/@myrdiaclonix" target="_blank">
+          <ion-icon name="logo-youtube" size="small" aria-label="YouTube"></ion-icon>
+        </a>
+        <a class="my-color" href="https://twitter.com/myrdiaclonix" target="_blank">
+          <ion-icon name="logo-twitter" size="small" aria-label="Twitter"></ion-icon>
+        </a>
+      </div>
+      <p class="text-center">
+        &copy; <span id="current-year"></span> Jorge Luis Freitas Costa.
+        Licenciado sob a
+        <a class="my-color" href="https://opensource.org/licenses/MIT" target="_blank">
+          Licença MIT
+        </a>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
