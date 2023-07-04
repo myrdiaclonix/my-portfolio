@@ -4,6 +4,11 @@
 .my-color {
     color: darkred;
 }
+.my-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 .my-social-icon {
     text-decoration: none;
 }

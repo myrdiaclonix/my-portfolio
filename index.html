@@ -2,7 +2,7 @@
 <html lang="pt-br" class="h-100">
 
 <head>
-  <title>my-portfolio</title>
+  <title>Projeto portfólio</title>
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
-<body class="d-flex flex-column h-100">
-  <header>
+<body class="d-flex flex-column h-100 w-100">
+  <header class="bg-body-tertiary sticky-top">
     <nav class="navbar navbar-expand-lg border-bottom">
       <div class="container-lg">
         <span class="navbar-brand mb-0 h1">Jorge L. F. Costa</span>
@@ -25,8 +25,8 @@
           <div class="navbar-nav nav nav-underline">
             <a class="nav-link active" id="nav-home-tab" aria-current="page" data-bs-toggle="tab"
               data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-            <a class="nav-link" id="nav-features-tab" data-bs-toggle="tab" data-bs-target="#nav-features" type="button"
-              role="tab" aria-controls="nav-features" aria-selected="false">Features</a>
+            <a class="nav-link" id="nav-formation-tab" data-bs-toggle="tab" data-bs-target="#nav-formation"
+              type="button" role="tab" aria-controls="nav-formation" aria-selected="false">Formação</a>
             <a class="nav-link" id="nav-pricing-tab" data-bs-toggle="tab" data-bs-target="#nav-pricing" type="button"
               role="tab" aria-controls="nav-pricing" aria-selected="false">Pricing</a>
           </div>
@@ -35,21 +35,90 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container-lg" data-bs-spy="scroll" data-bs-target="#navbar-example3">
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-        Bom dia
+
+        <!-- Apresentação -->
+        <h1 class="display-3 text-center">Projeto portfólio</h1>
+        <p class="lead text-center">Para praticar e exercitar conceitos web.</p>
+        <p>
+          Olá, me chamo Jorge e estudo para ser engenheiro de software. Gosto de ler livros, ir no cinema, jogar RPG e
+          comer pizza. Atualmente estudo na UFMS, e tenho projetos com colegas de sala nos temas web, mobile,
+          inteligência artificial, banco de dados, arquitetura de software, entre outros.
+        </p>
+        <p>
+          Pretendo aprender mais sobre tecnologias web para melhorar a usabilidade dos usuários pelo front-end.
+          Acredito no trabalho em grupo como um método otimizado na realização do software, onde o desenvolvimento
+          ágil se mostra melhor utilizado.
+        </p>
+        <div class="row justify-content-center w-100">
+          <figure class="col-md-8 figure">
+            <img src="assets/img/code.png" class="figure-img img-fluid rounded" alt="Um código legal.">
+            <figcaption class="figure-caption text-end">Testar códigos são parte importante no processo de software.
+            </figcaption>
+          </figure>
+        </div>
       </div>
-      <div class="tab-pane fade" id="nav-features" role="tabpanel" aria-labelledby="features-tab" tabindex="0">
-        Boa tarde
+
+      <div class="tab-pane fade" id="nav-formation" role="tabpanel" aria-labelledby="formation-tab" tabindex="0">
+
+        <!-- Scrollspy -->
+        <div class="row">
+          <div class="col-4">
+            <div id="list-example" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+              class="scrollspy-example" tabindex="0">
+              <h4 id="list-item-1">Item 1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Viverra adipiscing at in tellus integer. Egestas diam in arcu cursus euismod.
+                Lectus arcu bibendum at varius vel pharetra vel. Eget nulla facilisi etiam dignissim diam quis. Ante in
+                nibh mauris cursus mattis molestie. Nulla at volutpat diam ut venenatis tellus in metus vulputate.
+                Tempor orci eu lobortis elementum nibh. In metus vulputate eu scelerisque felis imperdiet proin
+                fermentum. Orci porta non pulvinar neque laoreet. In nisl nisi scelerisque eu ultrices vitae auctor.
+                Blandit massa enim nec dui nunc mattis. Pellentesque habitant morbi tristique senectus et. Tempus quam
+                pellentesque nec nam aliquam. Lacus vestibulum sed arcu non odio. Sed arcu non odio euismod lacinia at
+                quis. Enim neque volutpat ac tincidunt vitae semper. Nibh mauris cursus mattis molestie a iaculis. Eros
+                donec ac odio tempor orci dapibus ultrices in. Ornare arcu dui vivamus arcu felis bibendum.</p>
+              <h4 id="list-item-2">Item 2</h4>
+              <p>...</p>
+              <h4 id="list-item-3">Item 3</h4>
+              <p>Dolor sit amet consectetur adipiscing elit. Ultrices sagittis orci a scelerisque purus semper. Eget
+                velit aliquet sagittis id consectetur purus ut faucibus. Quis vel eros donec ac odio tempor orci dapibus
+                ultrices. Feugiat in ante metus dictum at tempor commodo. Euismod in pellentesque massa placerat duis.
+                Fames ac turpis egestas integer. Et tortor consequat id porta nibh venenatis cras sed felis. Neque
+                aliquam vestibulum morbi blandit cursus risus at ultrices mi. Erat nam at lectus urna duis convallis
+                convallis tellus. Viverra nibh cras pulvinar mattis nunc sed blandit libero. Nisl condimentum id
+                venenatis a condimentum. Sed id semper risus in hendrerit gravida rutrum. Fringilla est ullamcorper eget
+                nulla facilisi etiam dignissim. Sed viverra ipsum nunc aliquet bibendum enim. Pellentesque id nibh
+                tortor id aliquet lectus proin. Aliquam eleifend mi in nulla posuere. Tristique senectus et netus et.
+              </p>
+              <h4 id="list-item-4">Item 4</h4>
+              <p>Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Massa vitae tortor condimentum
+                lacinia quis vel eros donec ac. Nibh ipsum consequat nisl vel pretium lectus. Fusce id velit ut tortor
+                pretium viverra. Sapien faucibus et molestie ac. Aliquam vestibulum morbi blandit cursus risus at.
+                Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Nibh praesent tristique magna sit
+                amet purus gravida. Suspendisse sed nisi lacus sed viverra tellus. A diam sollicitudin tempor id eu nisl
+                nunc mi ipsum. Habitant morbi tristique senectus et netus et malesuada. Urna id volutpat lacus laoreet
+                non curabitur gravida. Laoreet id donec ultrices tincidunt arcu non sodales neque.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="nav-pricing" role="tabpanel" aria-labelledby="pricing-tab" tabindex="0">
+          Boa noite
+        </div>
       </div>
-      <div class="tab-pane fade" id="nav-pricing" role="tabpanel" aria-labelledby="pricing-tab" tabindex="0">
-        Boa noite
-      </div>
-    </div>
   </main>
 
-  <footer class="border-top mt-auto pt-3">
+  <footer class="bg-body-tertiary border-top mt-auto pt-3">
     <div class="container-lg">
       <div class="text-center">
         <a class="my-color my-social-icon me-3" href="https://www.linkedin.com/in/jlfcosta/" target="_blank">
