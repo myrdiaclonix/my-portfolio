@@ -1,6 +1,12 @@
 .active.nav-link {
     border-color: darkred !important;
 }
+.my-accordion {
+    border: 0px;
+}
+.my-accordion:not(.collapsed) {
+    background-color: rgb(161, 0, 0);
+}
 .my-color {
     color: darkred;
 }
