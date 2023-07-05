@@ -27,8 +27,8 @@
               data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
             <a class="nav-link" id="nav-formation-tab" data-bs-toggle="tab" data-bs-target="#nav-formation"
               type="button" role="tab" aria-controls="nav-formation" aria-selected="false">Formação</a>
-            <a class="nav-link" id="nav-pricing-tab" data-bs-toggle="tab" data-bs-target="#nav-pricing" type="button"
-              role="tab" aria-controls="nav-pricing" aria-selected="false">Pricing</a>
+            <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
+              role="tab" aria-controls="nav-contact" aria-selected="false">Contato</a>
           </div>
         </div>
       </div>
@@ -38,31 +38,31 @@
   <main class="container-lg" data-bs-spy="scroll" data-bs-target="#navbar-example3">
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-
         <!-- Apresentação -->
-        <h1 class="display-3 text-center">Projeto portfólio</h1>
-        <p class="lead text-center">Para praticar e exercitar conceitos web.</p>
-        <p>
-          Olá, me chamo Jorge e estudo para ser engenheiro de software. Gosto de ler livros, ir no cinema, jogar RPG e
-          comer pizza. Atualmente estudo na UFMS, e tenho projetos com colegas de sala nos temas web, mobile,
-          inteligência artificial, banco de dados, arquitetura de software, entre outros.
-        </p>
-        <p>
-          Pretendo aprender mais sobre tecnologias web para melhorar a usabilidade dos usuários pelo front-end.
-          Acredito no trabalho em grupo como um método otimizado na realização do software, onde o desenvolvimento
-          ágil se mostra melhor utilizado.
-        </p>
-        <div class="row justify-content-center w-100">
-          <figure class="col-md-8 figure">
-            <img src="assets/img/code.png" class="figure-img img-fluid rounded" alt="Um código legal.">
-            <figcaption class="figure-caption text-end">Testar códigos são parte importante no processo de software.
-            </figcaption>
-          </figure>
+        <div class="my-3">
+          <h1 class="display-3 text-center">Projeto portfólio</h1>
+          <p class="lead text-center">Para praticar e exercitar conceitos web.</p>
+          <p>
+            Olá, me chamo Jorge e estudo para ser engenheiro de software. Gosto de ler livros, ir no cinema, jogar RPG e
+            comer pizza. Atualmente estudo na UFMS, e tenho projetos com colegas de sala nos temas web, mobile,
+            inteligência artificial, banco de dados, arquitetura de software, entre outros.
+          </p>
+          <p>
+            Pretendo aprender mais sobre tecnologias web para melhorar a usabilidade dos usuários pelo front-end.
+            Acredito no trabalho em grupo como um método otimizado na realização do software, onde o desenvolvimento
+            ágil se mostra melhor utilizado.
+          </p>
+          <div class="justify-content-center mx-0 row w-100">
+            <figure class="col-md-8 figure">
+              <img src="assets/img/code.png" class="figure-img img-fluid rounded" alt="Um código legal.">
+              <figcaption class="figure-caption text-end">Testar códigos são parte importante no processo de software.
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </div>
 
       <div class="tab-pane fade" id="nav-formation" role="tabpanel" aria-labelledby="formation-tab" tabindex="0">
-
         <!-- Scrollspy -->
         <div class="row">
           <div class="col-4">
@@ -111,10 +111,69 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="tab-pane fade" id="nav-pricing" role="tabpanel" aria-labelledby="pricing-tab" tabindex="0">
-          Boa noite
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+        <!-- Contatos e Redes -->
+        <div class="col-md-8 my-3 mx-auto">
+          <h1 class="display-6 text-center">Contatos</h1>
+          <div class="mt-5 table-responsive">
+            <table class="table table-borderless align-middle">
+              <tbody>
+                <tr>
+                  <th style="width:25%" rowspan="2" class="pb-5">Email</th>
+                  <td>myrdiaclonix@duck.com</td>
+                </tr>
+                <tr>
+                  <td class="pb-5">myrdiaclonix@pm.me</td>
+                </tr>
+                <tr>
+                  <th rowspan="4">Redes sociais</th>
+                  <td class="align-middle"><a class="icon-link my-color my-social-icon me-3"
+                      href="https://www.linkedin.com/in/jlfcosta/" target="_blank">
+                      <ion-icon class="me-2" name="logo-linkedin" size="large"
+                        aria-label="LinkedIn"></ion-icon>LinkedIn</a></td>
+                </tr>
+                <tr>
+                  <td class="align-middle"><a class="icon-link my-color my-social-icon me-3"
+                      href="https://instagram.com/myrdiaclonix?igshid=MzNlNGNkZWQ4Mg==" target="_blank">
+                      <ion-icon class="me-2" name="logo-instagram" size="large"
+                        aria-label="Instagram"></ion-icon>Instagram</a></td>
+                </tr>
+                <tr>
+                  <td class="align-middle"><a class="icon-link my-color my-social-icon me-3"
+                      href="https://www.youtube.com/@myrdiaclonix" target="_blank">
+                      <ion-icon class="me-2" name="logo-youtube" size="large"
+                        aria-label="YouTube"></ion-icon>YouTube</a></td>
+                </tr>
+                <tr>
+                  <td class="align-middle"><a class="icon-link my-color my-social-icon me-3"
+                      href="https://twitter.com/myrdiaclonix" target="_blank">
+                      <ion-icon class="me-2" name="logo-twitter" size="large"
+                        aria-label="Twitter"></ion-icon>Twitter</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+
+        <!-- Formulário de email -->
+        <p class="lead text-center">Quer me conhecer melhor? Mande-me um email...</p>
+        <form class="col-md-8 mb-3 mx-auto justify-content-center">
+          <div class="mb-3">
+            <label for="sampleNameInput" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="sampleNameInput" placeholder="Seu Nome">
+          </div>
+          <div class="mb-3">
+            <label for="sampleEmailInput" class="form-label">Email</label>
+            <input type="email" class="form-control" id="sampleEmailInput" placeholder="email@exemplo.com">
+          </div>
+          <div class="mb-3">
+            <label for="sampleTextInput" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="sampleTextInput" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn my-btn">Enviar</button>
+        </form>
       </div>
   </main>
 
@@ -131,7 +190,7 @@
         <a class="my-color my-social-icon me-3" href="https://www.youtube.com/@myrdiaclonix" target="_blank">
           <ion-icon name="logo-youtube" size="small" aria-label="YouTube"></ion-icon>
         </a>
-        <a class="my-color" href="https://twitter.com/myrdiaclonix" target="_blank">
+        <a class="my-color my-social-icon" href="https://twitter.com/myrdiaclonix" target="_blank">
           <ion-icon name="logo-twitter" size="small" aria-label="Twitter"></ion-icon>
         </a>
       </div>

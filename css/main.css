@@ -4,6 +4,13 @@
 .my-color {
     color: darkred;
 }
+.my-btn {
+    color: white !important;
+    background-color: darkred;
+}
+.my-btn:hover {
+    background-color: rgb(237, 0, 0);
+}
 .my-navbar {
     position: fixed;
     top: 0;
@@ -11,4 +18,8 @@
 }
 .my-social-icon {
     text-decoration: none;
+    transition-duration: 0.25s;
+}
+.my-social-icon:hover {
+    color: rgb(237, 0, 0);
 }
