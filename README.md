@@ -7,3 +7,7 @@ Após ter o repositório localmente, e o **VS Code** instalado com a extensão *
 - Clicar em **Go Live** (em geral no canto inferior direito).
 
 No browser a aplicação irá ser executada.
+
+## Tecnologias utilizadas
+- Bootstrap
+- jQuery
