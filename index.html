@@ -29,6 +29,8 @@
               type="button" role="tab" aria-controls="nav-formation" aria-selected="false">Formação</a>
             <a class="nav-link" id="nav-professional-tab" data-bs-toggle="tab" data-bs-target="#nav-professional"
               type="button" role="tab" aria-controls="nav-professional" aria-selected="false">Atuação profissional</a>
+            <a class="nav-link" id="nav-portfolio-tab" data-bs-toggle="tab" data-bs-target="#nav-portfolio"
+              type="button" role="tab" aria-controls="nav-portfolio" aria-selected="false">Portfólio</a>
             <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
               role="tab" aria-controls="nav-contact" aria-selected="false">Contato</a>
           </div>
@@ -222,9 +224,39 @@
                     recursos e funcionalidades de acordo com as diretrizes de design e usabilidade.</p>
                 </dd>
               </dl>
-              
+
               <p class="fst-italic">*Os dados aqui citados são fictícios, usados apenas para exercício de conceitos de
                 desenvolvimento front-end.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Tab -->
+      <div class="tab-pane fade" id="nav-portfolio" role="tabpanel" aria-labelledby="portfolio-tab" tabindex="0">
+        <div class="container-lg">
+          <div class="row gx-5 py-3">
+            <!-- Cards -->
+            <div class="col-md-4">
+              <div class="card bg-light">
+                <img src="assets/img/rpg_project.png" class="card-img-top" alt="repo img">
+                <div class="card-body">
+                  <h5 class="card-title"><a class="my-color" data-bs-toggle="offcanvas" href="#offcanvasRpgProject"
+                      role="button" aria-controls="offcanvasRpgProject">rpg-project</a></h5>
+                  <p class="card-text">Projeto sandbox para exercício de tecnologias web, focado em funcionalidade que
+                    ajudem jogadores de RPG de mesa.</p>
+                  <a href="https://myrdiaclonix.github.io/rpg-project/" class="card-link my-color" target="_blank">Ir ao
+                    site</a>
+                  <a href="https://github.com/myrdiaclonix/rpg-project" class="card-link my-color"
+                    target="_blank">Repositório</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bg-light">meu</div>
+            </div>
+            <div class="col-md-4">
+              <div class="bg-light">bom</div>
             </div>
           </div>
         </div>
@@ -311,7 +343,121 @@
           <button type="submit" class="btn my-btn">Enviar</button>
         </form>
       </div>
+    </div>
   </main>
+
+  <!-- Offcanvas rpg-project -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRpgProject"
+    aria-labelledby="offcanvasRpgProjectLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRpgProjectLabel">rpg-project - Tecnologias</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="container-lg">
+        <!-- Button triggers - Modal -->
+        <a type="button" class="my-color my-link mb-2" data-bs-toggle="modal" data-bs-target="#bootstrapModal">
+          <ion-icon class="me-1" name="arrow-forward-outline"></ion-icon>Bootstrap
+        </a><br>
+        <a type="button" class="my-color my-link mb-2" data-bs-toggle="modal" data-bs-target="#cssModal">
+          <ion-icon class="me-1" name="arrow-forward-outline"></ion-icon>CSS
+        </a><br>
+        <a type="button" class="my-color my-link mb-2" data-bs-toggle="modal" data-bs-target="#html5Modal">
+          <ion-icon class="me-1" name="arrow-forward-outline"></ion-icon>HTML5
+        </a><br>
+        <a type="button" class="my-color my-link mb-2" data-bs-toggle="modal" data-bs-target="#javaScriptModal">
+          <ion-icon class="me-1" name="arrow-forward-outline"></ion-icon>JavaScript
+        </a><br>
+        <a type="button" class="my-color my-link mb-2" data-bs-toggle="modal" data-bs-target="#jQueryModal">
+          <ion-icon class="me-1" name="arrow-forward-outline"></ion-icon>jQuery
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Modal -->
+  <div class="modal fade" id="bootstrapModal" tabindex="-1" aria-labelledby="bootstrapModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="bootstrapModalLabel">Bootstrap</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Bootstrap
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CSS Modal -->
+  <div class="modal fade" id="cssModal" tabindex="-1" aria-labelledby="cssModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="cssModalLabel">CSS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          CSS
+        </div>
+        <div class="modal-footer">
+          footer
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HTML5 Modal -->
+  <div class="modal fade" id="html5Modal" tabindex="-1" aria-labelledby="html5ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="html5ModalLabel">HTML5</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          HTML5
+        </div>
+        <div class="modal-footer">
+          footer
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modal -->
+  <div class="modal fade" id="javaScriptModal" tabindex="-1" aria-labelledby="javaScriptModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="javaScriptModalLabel">JavaScript</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          JavaScript
+        </div>
+        <div class="modal-footer">
+          footer
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery Modal -->
+  <div class="modal fade" id="jQueryModal" tabindex="-1" aria-labelledby="jQueryModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="jQueryModalLabel">jQuery</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          jQuery
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer class="bg-body-tertiary border-top pt-3">
     <div class="container-lg">

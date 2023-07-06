@@ -45,6 +45,9 @@ th, td {
 .my-btn:hover {
     background-color: rgb(237, 0, 0);
 }
+.my-link {
+    text-decoration: none;
+}
 .my-navbar {
     position: fixed;
     top: 0;
