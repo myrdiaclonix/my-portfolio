@@ -2,7 +2,7 @@
 dd {
     padding-bottom: 1rem;
 }
-th, td {
+th {
     text-align: center;
 }
 
@@ -44,6 +44,9 @@ th, td {
 }
 .my-btn:hover {
     background-color: rgb(237, 0, 0);
+}
+.my-icon {
+    font-size: 16px;
 }
 .my-link {
     text-decoration: none;
