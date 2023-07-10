@@ -359,18 +359,18 @@
 
         <!-- Formulário de email -->
         <p class="lead text-center">Quer me conhecer melhor? Mande-me um email...</p>
-        <form class="col-md-8 mb-3 mx-auto justify-content-center">
+        <form id="myContactForm" class="col-md-8 mb-3 mx-auto justify-content-center" name="contactForm">
           <div class="mb-3">
             <label for="sampleNameInput" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="sampleNameInput" placeholder="Seu Nome">
+            <input type="text" class="form-control" id="nameInput" placeholder="Seu Nome" required>
           </div>
           <div class="mb-3">
             <label for="sampleEmailInput" class="form-label">Email</label>
-            <input type="email" class="form-control" id="sampleEmailInput" placeholder="email@exemplo.com">
+            <input type="email" class="form-control" id="emailInput" placeholder="email@exemplo.com" required>
           </div>
           <div class="mb-3">
             <label for="sampleTextInput" class="form-label">Mensagem</label>
-            <textarea class="form-control" id="sampleTextInput" rows="3"></textarea>
+            <textarea class="form-control" id="textInput" rows="3" required></textarea>
           </div>
           <button type="submit" class="btn my-btn">Enviar</button>
         </form>
@@ -960,6 +960,19 @@
     </div>
   </div>
 
+  <!-- Toast: message saved -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="msgToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+          <path
+            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+          <path
+            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+        </svg> Mensagem salva com sucesso!</div>
+    </div>
+  </div>
+
   <footer class="bg-body-tertiary border-top pt-3">
     <div class="container-lg">
       <div class="text-center">
@@ -994,6 +1007,7 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/msgControl.js"></script>
 </body>
 
 </html>
