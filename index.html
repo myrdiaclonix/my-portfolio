@@ -40,7 +40,7 @@
     </nav>
   </header>
 
-  <main class="container-lg my-auto" data-bs-spy="scroll" data-bs-target="#navbar-example3">
+  <main class="container-lg my-auto">
     <div class="tab-content" id="myTabContent">
 
       <!-- Home Tab -->
@@ -372,7 +372,10 @@
             <label for="sampleTextInput" class="form-label">Mensagem</label>
             <textarea class="form-control" id="textInput" rows="3" required></textarea>
           </div>
-          <button type="submit" class="btn my-btn">Enviar</button>
+          <div class="d-flex justify-content-between">
+            <button type="submit" class="btn my-btn me-3">Enviar</button>
+            <button id="myCleanBtn" type="button" class="btn">Limpar mensagens</button>
+          </div>
         </form>
       </div>
     </div>
@@ -880,7 +883,7 @@
     </div>
   </div>
 
-  <!-- Starlark -->
+  <!-- Starlark Modal -->
   <div class="modal fade" id="starlarkModal" tabindex="-1" aria-labelledby="starlarkModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -920,7 +923,7 @@
     </div>
   </div>
 
-  <!-- TypeScript -->
+  <!-- TypeScript Modal -->
   <div class="modal fade" id="typeScriptModal" tabindex="-1" aria-labelledby="typeScriptModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -970,6 +973,19 @@
           <path
             d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
         </svg> Mensagem salva com sucesso!</div>
+    </div>
+  </div>
+
+  <!-- Toast: messages cleared -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="clearToast" class="toast my-toast-bg" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+          <path
+            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+          <path
+            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+        </svg> Mensagens excluídas!</div>
     </div>
   </div>
 

@@ -4,7 +4,9 @@ if (!localStorage.messages) {
 }
 
 const msgToast = document.getElementById("msgToast");
-const toastBootstrap = bootstrap.Toast.getOrCreateInstance(msgToast);
+const clearToast = document.getElementById("clearToast");
+const toastBootstrapMsg = bootstrap.Toast.getOrCreateInstance(msgToast);
+const toastBootstrapClear = bootstrap.Toast.getOrCreateInstance(clearToast);
 
 document.getElementById("myContactForm").addEventListener("submit", (e) => {
   e.preventDefault();
@@ -30,5 +32,11 @@ document.getElementById("myContactForm").addEventListener("submit", (e) => {
   document.forms["contactForm"]["emailInput"].value = "";
   document.forms["contactForm"]["textInput"].value = "";
 
-  toastBootstrap.show();
+  toastBootstrapMsg.show();
+});
+
+// Lida com a exclusão das mensagens.
+document.getElementById("myCleanBtn").addEventListener("click", () => {
+  localStorage.messages = [];
+  toastBootstrapClear.show();
 });
