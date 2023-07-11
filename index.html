@@ -5,6 +5,8 @@
   <title>Projeto portfólio</title>
 
   <meta charset="utf-8" />
+  <meta name="author" content="Jorga Costa">
+  <meta name="keywords" content="HTML, CSS, JavaScript, portfolio, front-end">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="icon" type="image/x-icon" href="assets/img/my_favicon.svg">
@@ -372,10 +374,12 @@
             <label for="sampleTextInput" class="form-label">Mensagem</label>
             <textarea class="form-control" id="textInput" rows="3" required></textarea>
           </div>
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between mb-3">
             <button type="submit" class="btn my-btn me-3">Enviar</button>
-            <button id="myCleanBtn" type="button" class="btn">Limpar mensagens</button>
+            <button id="myCleanBtn" type="button" class="btn border">Limpar mensagens</button>
           </div>
+          <button id="myMsgModalBtn" type="button" class="btn border float-end mb-3" data-bs-toggle="modal"
+            data-bs-target="#messagesModal">Exibir mensagens</button>
         </form>
       </div>
     </div>
@@ -959,6 +963,19 @@
             <li>Basecamp</li>
           </ul>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Local storage messages Modal -->
+  <div class="modal fade" id="messagesModal" tabindex="-1" aria-labelledby="messagesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="messagesModalLabel">Mensagens salvas</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="myMsgModalBody" class="modal-body pt-0"></div>
       </div>
     </div>
   </div>

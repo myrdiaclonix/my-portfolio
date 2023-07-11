@@ -8,6 +8,13 @@ const clearToast = document.getElementById("clearToast");
 const toastBootstrapMsg = bootstrap.Toast.getOrCreateInstance(msgToast);
 const toastBootstrapClear = bootstrap.Toast.getOrCreateInstance(clearToast);
 
+function clearForm() {
+  // Limpa o formulário.
+  document.forms["contactForm"]["nameInput"].value = "";
+  document.forms["contactForm"]["emailInput"].value = "";
+  document.forms["contactForm"]["textInput"].value = "";
+}
+
 document.getElementById("myContactForm").addEventListener("submit", (e) => {
   e.preventDefault();
   let formName = document.forms["contactForm"]["nameInput"].value;
@@ -27,16 +34,41 @@ document.getElementById("myContactForm").addEventListener("submit", (e) => {
   // Salva em local storage.
   localStorage.messages = JSON.stringify(localMsg);
 
-  // Limpa o formulário.
-  document.forms["contactForm"]["nameInput"].value = "";
-  document.forms["contactForm"]["emailInput"].value = "";
-  document.forms["contactForm"]["textInput"].value = "";
-
+  clearForm();
   toastBootstrapMsg.show();
 });
 
 // Lida com a exclusão das mensagens.
 document.getElementById("myCleanBtn").addEventListener("click", () => {
   localStorage.messages = [];
+  clearForm();
   toastBootstrapClear.show();
+});
+
+document.getElementById("myMsgModalBtn").addEventListener("click", () => {
+  let modalBody = document.getElementById("myMsgModalBody");
+  modalBody.innerHTML = "";
+
+  let msgData = [];
+  if (localStorage.messages) {
+    msgData = JSON.parse(localStorage.messages);
+  }
+
+  if (msgData.length === 0) {
+    modalBody.innerHTML = "Nenhuma mensagem salva.";
+  } else {
+    for (let i = 0; i < msgData.length; i++) {
+      let msgCard =
+        `<div class="card w-100 mt-3"><div class="card-body"><figure class="mb-0"><blockquote class="blockquote"><p>` +
+        msgData[i]["text"] +
+        `</p></blockquote><figcaption class="blockquote-footer mb-0">` +
+        msgData[i]["name"] +
+        ", " +
+        msgData[i]["email"] +
+        `</figcaption></figure></div></div>`;
+      
+      // Insere cards dentro do modal.
+      modalBody.innerHTML += msgCard;
+    }
+  }
 });
