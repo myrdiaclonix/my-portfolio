@@ -55,7 +55,7 @@ document.getElementById("myMsgModalBtn").addEventListener("click", () => {
   }
 
   if (msgData.length === 0) {
-    modalBody.innerHTML = "Nenhuma mensagem salva.";
+    modalBody.innerHTML = `<p class="mb-0 pt-3">Nenhuma mensagem salva.`;
   } else {
     for (let i = 0; i < msgData.length; i++) {
       let msgCard =
